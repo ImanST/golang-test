@@ -10,7 +10,7 @@ func main() {
 	// Hello world, the web server
 
 	helloHandler := func(w http.ResponseWriter, req *http.Request) {
-		io.WriteString(w, "Testing Golang APP! for Webhook Main branch.\n")
+		io.WriteString(w, "Testing Golang APP! for Webhook Main branch json response.\n")
 	}
 
 	http.HandleFunc("/", helloHandler)

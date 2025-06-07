@@ -10,6 +10,7 @@ func main() {
 	// Hello world, the web server
 
 	helloHandler := func(w http.ResponseWriter, req *http.Request) {
+		undefinedFunction() 
 		io.WriteString(w, "5/28/2025 10:38 AM.\n")
 	}
 
